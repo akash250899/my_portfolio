@@ -138,6 +138,7 @@ USE_TZ = True
 # #     os.path.join(BASE_DIR, 'staticfiles/')
 # # ]
 
+COMPRESS_ENABLED = os.environ.get('COMPRESS_ENABLED', False)
 if DEBUG:
     STATICFILES_DIRS = [
         os.path.join(BASE_DIR, 'static')

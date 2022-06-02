@@ -139,7 +139,12 @@ if DEBUG:
         os.path.join(BASE_DIR, 'static_in_project')
 ]
 else:
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static_in_project/')
+    STATICFILES_DIRS = [
+        os.path.join(BASE_DIR, 'static_in_project')
+]
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
 
 
 
